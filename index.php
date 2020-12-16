@@ -146,14 +146,36 @@
         ];
 
         foreach ($Faqs as $key => $Faq) { ?>
-            <h2 class="title"><?php echo $Faq['Q']; ?> </h2> 
+            <h2 class="title"><?php echo $Faq['Q']; ?> </h2>
+
             <?php foreach ($Faq['A'] as $value ) { ?>
               <p class="text"> <?php echo $value; ?> </p>
 
-            <!-- }?> -->
-        <?php }} ?>
+        <?php } } ?>
       </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="d-flex">
+      <div class="footer-container d-flex">
+        <section class="f-sx">
+          <ul class="copy-nav d-flex">
+            <li> <a href="#"> Google </a> </li>
+            <li> <a href="#"> Tutto su Google </a> </li>
+            <li> <a href="#"> Privacy </a> </li>
+            <li> <a href="#"> Termini </a> </li>
+          </ul>
+        </section>
+        <section class="f-dx">
+          <select class="lingue" name="">
+            <option value="langue">Italiano</option>
+            <option value="langue">Inglese</option>
+            <option value="langue">Francese</option>
+          </select>
+        </section>
+      </div>
+
+    </footer>
 
 
   </body>
